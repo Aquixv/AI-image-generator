@@ -1,3 +1,4 @@
+import fetch from 'node-fetch';
 // /api/generate-image.js
 
 // --- Local Loading (Add this block) ---
@@ -10,7 +11,7 @@ if (process.env.NODE_ENV !== 'production') {
 import fetch from 'node-fetch'; 
 // ... rest of your function (HF_ROUTER_URL, HF_KEY, req/res logic) ...
 
-import fetch from 'node-fetch'; // Requires "node-fetch" package
+ // Requires "node-fetch" package
 
 // Hugging Face Router URL
 const HF_ROUTER_URL = 'https://router.huggingface.co/hf-inference/models/stabilityai/stable-diffusion-xl-base-1.0';
