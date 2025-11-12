@@ -16,22 +16,22 @@ export const ImageGenerator = () => {
 
         
         setLoading(true);
-        setImage_url(Ghost); // Optional: Clear the image or show a loading indicator here
+        setImage_url(Ghost); 
 
         try {
             const response = await fetch(
-                '/hf-image/stabilityai/stable-diffusion-xl-base-1.0',
+                '/api/generate-image',
                 {
                     method: "POST",
                     headers: {
                         "Content-Type": "application/json",
                         // The 'User-Agent' header is not strictly needed for this API
-                        Authorization: "Bearer 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", 
+                         
                     },
                     body: JSON.stringify({
-                        // Correct key is 'inputs'
+                        
                         inputs: inputRef.current.value, 
-                        // Optional: Add parameters here for better quality control
+                        
                     }),
                 }
             );
