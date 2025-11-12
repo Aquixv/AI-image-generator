@@ -6,6 +6,7 @@ const { Buffer } = require('buffer');
 // 🛑 CRITICAL CHECK: Ensure this URL path is 100% correct 
 // Router URL + /hf-inference/models/ + Model ID
 const HF_ROUTER_URL = 'https://router.huggingface.co/hf-inference/models/stabilityai/stable-diffusion-xl-base-1.0';
+// It MUST include /hf-inference/models/ exactly.
 
 // Key is securely loaded from Vercel Environment Variables
 const HF_KEY = process.env.HF_API_KEY; 
