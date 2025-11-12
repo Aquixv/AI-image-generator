@@ -20,7 +20,7 @@ export const ImageGenerator = () => {
 
         try {
             const response = await fetch(
-                'api/generate-image',
+                '/api/generate-image',
                 {
                     method: "POST",
                     headers: {
